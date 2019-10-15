@@ -4,6 +4,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.HashMap;
+
 /**
  * @ProjectName: springboot-advance
  * @ClassName: SinglyLinkedListReverse
@@ -22,7 +24,7 @@ public class SinglyLinkedListReverse {
         SinglyLinkedList nextNode = null;
         SinglyLinkedList curNode = linkedList;
         SinglyLinkedList newNode = null;
-        while (curNode.getNext() != null) {
+        while (curNode != null) {
             newNode =curNode.getNext();
             curNode.setNext(nextNode);
             nextNode = curNode;
