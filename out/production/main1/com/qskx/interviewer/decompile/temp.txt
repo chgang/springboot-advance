@@ -1,0 +1,205 @@
+Classfile /Users/chenggang/github/springboot-advance/interviewer/src/main/java/com/qskx/interviewer/decompile/FinallyTest.class
+  Last modified 2019-12-6; size 1107 bytes
+  MD5 checksum a925cd4392650fe3ae5729a1eb4c9b59
+  Compiled from "FinallyTest.java"
+public class com.qskx.interviewer.decompile.FinallyTest
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #14.#37        // java/lang/Object."<init>":()V
+   #2 = Fieldref           #38.#39        // java/lang/System.out:Ljava/io/PrintStream;
+   #3 = Methodref          #40.#41        // java/io/PrintStream.println:(I)V
+   #4 = Class              #42            // java/lang/Integer
+   #5 = Methodref          #4.#43         // java/lang/Integer."<init>":(I)V
+   #6 = String             #44            // 121
+   #7 = Class              #45            // com/qskx/interviewer/decompile/FinallyTest
+   #8 = String             #46            // 1233
+   #9 = String             #47            // 开始。。。。。。
+  #10 = Methodref          #40.#48        // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #11 = Methodref          #7.#49         // com/qskx/interviewer/decompile/FinallyTest.str:()Ljava/lang/String;
+  #12 = String             #50            // 124
+  #13 = Fieldref           #7.#51         // com/qskx/interviewer/decompile/FinallyTest.s:Ljava/lang/String;
+  #14 = Class              #52            // java/lang/Object
+  #15 = Utf8               s
+  #16 = Utf8               Ljava/lang/String;
+  #17 = Utf8               i
+  #18 = Utf8               I
+  #19 = Utf8               ConstantValue
+  #20 = Integer            3
+  #21 = Utf8               <init>
+  #22 = Utf8               ()V
+  #23 = Utf8               Code
+  #24 = Utf8               LineNumberTable
+  #25 = Utf8               test1
+  #26 = Utf8               (I)I
+  #27 = Utf8               StackMapTable
+  #28 = Class              #53            // java/lang/Throwable
+  #29 = Utf8               test2
+  #30 = Utf8               str
+  #31 = Utf8               ()Ljava/lang/String;
+  #32 = Utf8               main
+  #33 = Utf8               ([Ljava/lang/String;)V
+  #34 = Utf8               <clinit>
+  #35 = Utf8               SourceFile
+  #36 = Utf8               FinallyTest.java
+  #37 = NameAndType        #21:#22        // "<init>":()V
+  #38 = Class              #54            // java/lang/System
+  #39 = NameAndType        #55:#56        // out:Ljava/io/PrintStream;
+  #40 = Class              #57            // java/io/PrintStream
+  #41 = NameAndType        #58:#59        // println:(I)V
+  #42 = Utf8               java/lang/Integer
+  #43 = NameAndType        #21:#59        // "<init>":(I)V
+  #44 = Utf8               121
+  #45 = Utf8               com/qskx/interviewer/decompile/FinallyTest
+  #46 = Utf8               1233
+  #47 = Utf8               开始。。。。。。
+  #48 = NameAndType        #58:#60        // println:(Ljava/lang/String;)V
+  #49 = NameAndType        #30:#31        // str:()Ljava/lang/String;
+  #50 = Utf8               124
+  #51 = NameAndType        #15:#16        // s:Ljava/lang/String;
+  #52 = Utf8               java/lang/Object
+  #53 = Utf8               java/lang/Throwable
+  #54 = Utf8               java/lang/System
+  #55 = Utf8               out
+  #56 = Utf8               Ljava/io/PrintStream;
+  #57 = Utf8               java/io/PrintStream
+  #58 = Utf8               println
+  #59 = Utf8               (I)V
+  #60 = Utf8               (Ljava/lang/String;)V
+{
+  public com.qskx.interviewer.decompile.FinallyTest();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 11: 0
+
+  public static int test1(int);
+    descriptor: (I)I
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=1, locals=3, args_size=1
+         0: iinc          0, 20
+         3: iload_0
+         4: istore_1
+         5: iinc          0, 30
+         8: iload_0
+         9: ireturn
+        10: astore_2
+        11: iinc          0, 30
+        14: iload_0
+        15: ireturn
+      Exception table:
+         from    to  target type
+             0     5    10   any
+      LineNumberTable:
+        line 19: 0
+        line 20: 3
+        line 22: 5
+        line 23: 8
+        line 22: 10
+        line 23: 14
+      StackMapTable: number_of_entries = 1
+        frame_type = 74 /* same_locals_1_stack_item */
+          stack = [ class java/lang/Throwable ]
+
+  public static int test2(int);
+    descriptor: (I)I
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=3, args_size=1
+         0: iinc          0, 20
+         3: iload_0
+         4: istore_1
+         5: iinc          0, 30
+         8: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        11: iload_0
+        12: invokevirtual #3                  // Method java/io/PrintStream.println:(I)V
+        15: iload_1
+        16: ireturn
+        17: astore_2
+        18: iinc          0, 30
+        21: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        24: iload_0
+        25: invokevirtual #3                  // Method java/io/PrintStream.println:(I)V
+        28: aload_2
+        29: athrow
+      Exception table:
+         from    to  target type
+             0     5    17   any
+      LineNumberTable:
+        line 28: 0
+        line 29: 3
+        line 31: 5
+        line 32: 8
+        line 29: 15
+        line 31: 17
+        line 32: 21
+        line 33: 28
+      StackMapTable: number_of_entries = 1
+        frame_type = 81 /* same_locals_1_stack_item */
+          stack = [ class java/lang/Throwable ]
+
+  public static java.lang.String str();
+    descriptor: ()Ljava/lang/String;
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=3, locals=4, args_size=0
+         0: sipush        456
+         3: istore_0
+         4: new           #4                  // class java/lang/Integer
+         7: dup
+         8: bipush        123
+        10: invokespecial #5                  // Method java/lang/Integer."<init>":(I)V
+        13: astore_1
+        14: ldc           #6                  // String 121
+        16: astore_2
+        17: ldc           #8                  // String 1233
+        19: astore_2
+        20: bipush        7
+        22: istore_3
+        23: aload_2
+        24: areturn
+      LineNumberTable:
+        line 37: 0
+        line 38: 4
+        line 39: 14
+        line 40: 17
+        line 41: 20
+        line 42: 23
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         3: ldc           #9                  // String 开始。。。。。。
+         5: invokevirtual #10                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+         8: invokestatic  #11                 // Method str:()Ljava/lang/String;
+        11: pop
+        12: goto          12
+      LineNumberTable:
+        line 46: 0
+        line 47: 8
+        line 48: 12
+      StackMapTable: number_of_entries = 1
+        frame_type = 12 /* same */
+
+  static {};
+    descriptor: ()V
+    flags: ACC_STATIC
+    Code:
+      stack=1, locals=0, args_size=0
+         0: ldc           #12                 // String 124
+         2: putstatic     #13                 // Field s:Ljava/lang/String;
+         5: return
+      LineNumberTable:
+        line 13: 0
+}
+SourceFile: "FinallyTest.java"
