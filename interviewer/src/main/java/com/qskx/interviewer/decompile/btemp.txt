@@ -1,0 +1,97 @@
+Classfile /Users/chenggang/github/springboot-advance/interviewer/src/main/java/com/qskx/interviewer/decompile/B.class
+  Last modified 2020-2-26; size 508 bytes
+  MD5 checksum 9c4c8dde1b98942fed62f86b36bc4c22
+class com.qskx.interviewer.decompile.B
+  minor version: 0
+  major version: 52
+  flags: ACC_SUPER
+Constant pool:
+   #1 = Methodref          #7.#24         // java/lang/Object."<init>":()V
+   #2 = Fieldref           #6.#25         // com/qskx/interviewer/decompile/B.a:I
+   #3 = Fieldref           #6.#26         // com/qskx/interviewer/decompile/B.C:J
+   #4 = Long               1111l
+   #6 = Class              #27            // com/qskx/interviewer/decompile/B
+   #7 = Class              #28            // java/lang/Object
+   #8 = Utf8               a
+   #9 = Utf8               I
+  #10 = Utf8               C
+  #11 = Utf8               J
+  #12 = Utf8               <init>
+  #13 = Utf8               ()V
+  #14 = Utf8               Code
+  #15 = Utf8               LineNumberTable
+  #16 = Utf8               LocalVariableTable
+  #17 = Utf8               this
+  #18 = Utf8               Lcom/qskx/interviewer/decompile/B;
+  #19 = Utf8               test
+  #20 = Utf8               (J)J
+  #21 = Utf8               num
+  #22 = Utf8               ret
+  #23 = Utf8               <clinit>
+  #24 = NameAndType        #12:#13        // "<init>":()V
+  #25 = NameAndType        #8:#9          // a:I
+  #26 = NameAndType        #10:#11        // C:J
+  #27 = Utf8               com/qskx/interviewer/decompile/B
+  #28 = Utf8               java/lang/Object
+{
+  private int a;
+    descriptor: I
+    flags: ACC_PRIVATE
+
+  static long C;
+    descriptor: J
+    flags: ACC_STATIC
+
+  com.qskx.interviewer.decompile.B();
+    descriptor: ()V
+    flags:
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: sipush        1234
+         8: putfield      #2                  // Field a:I
+        11: return
+      LineNumberTable:
+        line 24: 0
+        line 25: 4
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      12     0  this   Lcom/qskx/interviewer/decompile/B;
+
+  public long test(long);
+    descriptor: (J)J
+    flags: ACC_PUBLIC
+    Code:
+      stack=4, locals=5, args_size=2
+         0: aload_0
+         1: getfield      #2                  // Field a:I
+         4: i2l
+         5: lload_1
+         6: ladd
+         7: getstatic     #3                  // Field C:J
+        10: ladd
+        11: lstore_3
+        12: lload_3
+        13: lreturn
+      LineNumberTable:
+        line 30: 0
+        line 31: 12
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      14     0  this   Lcom/qskx/interviewer/decompile/B;
+            0      14     1   num   J
+           12       2     3   ret   J
+
+  static {};
+    descriptor: ()V
+    flags: ACC_STATIC
+    Code:
+      stack=2, locals=0, args_size=0
+         0: ldc2_w        #4                  // long 1111l
+         3: putstatic     #3                  // Field C:J
+         6: return
+      LineNumberTable:
+        line 27: 0
+}
