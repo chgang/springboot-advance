@@ -9,6 +9,11 @@ package com.qskx.interviewer.jvm;
  * Copyright: Copyright (c) 2020
  */
 public class Guarantee {
+
+    /**
+     * -Xms20M -Xmx20M -Xmn10M -XX:+PrintGCDetails -XX:SurvivorRatio=8 -XX:+UseSerialGC
+     */
+
     /**
      * -XX:+UseSerialGC 串行
      * -XX:+UseParallelGC  -XX:+UseParallelOldGC 并行
