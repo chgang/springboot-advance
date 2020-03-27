@@ -11,7 +11,7 @@ package com.qskx.interviewer.jvm;
 public class Guarantee {
 
     /**
-     * -Xms20M -Xmx20M -Xmn10M -XX:+PrintGCDetails -XX:SurvivorRatio=8 -XX:+UseSerialGC
+     * -Xms20M -Xmx20M -Xmn10M -XX:+PrintGCDetails -XX:SurvivorRatio=3 -XX:+UseParNewGC -XX:+PrintTenuringDistribution -XX:MaxTenuringThreshold=2
      */
 
     /**
@@ -67,10 +67,34 @@ public class Guarantee {
         byte[]  allo1,
                 allo2,
                 allo3,
-                allo4;
-        allo1 = new byte[LEN * 2];
-        allo2 = new byte[LEN * 2];
-        allo3 = new byte[LEN * 2];
-        allo3 = new byte[LEN * 4];
+                allo4,
+                allo5,
+                allo6,
+                allo7;
+
+//        allo1 = new byte[LEN / 2];
+//        allo1 = null;
+//        allo2 = new byte[LEN / 4];
+        //第一部分（先测试第一部分，不会进入老年代）
+        // 设置初始3
+        allo3 = new byte[LEN * 3];
+        // 为了回收掉
+        allo3 = null;
+        // 目的让1M进入survisor
+        // 触发回收，把allo3回收，然后allo4进入新生代
+        allo4 = new byte[LEN * 3];
+        // 第二部分（再测试这部分，会进入老年代）
+        allo2 = new byte[LEN / 3];
+        allo4 = null;
+        allo5 = new byte[LEN * 3];
+        allo5 = null;
+        allo1 = new byte[LEN];
+        allo5 = new byte[LEN * 3];
+        allo5 = null;
+        allo6 = new byte[LEN / 3];
+        allo4 = new byte[LEN * 3];
+//        allo4 = null;
+//        allo7 = new byte[LEN / 3];
+//        allo4 = new byte[LEN * 3];
     }
 }

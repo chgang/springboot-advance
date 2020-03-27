@@ -43,11 +43,13 @@ public class FinallyTest {
     }
 
     public static void main(String[] args) {
-        System.out.println("开始。。。。。。");
-        str();
-        while (true) {
-
-        }
+//        System.out.println("开始。。。。。。");
+//        str();
+//        while (true) {
+//
+//        }
 //        System.out.println(str());
+        System.out.println(test1(10));
+        System.out.println(test2(10));
     }
 }

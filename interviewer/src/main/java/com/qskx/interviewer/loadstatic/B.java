@@ -10,10 +10,15 @@ package com.qskx.interviewer.loadstatic;
  */
 public class B {
 
+
     static int a = 2;
     static int b = 5;
+
     static {
         a = 10;
         System.out.println(b);
+    }
+    {
+        b = 10;
     }
 }
